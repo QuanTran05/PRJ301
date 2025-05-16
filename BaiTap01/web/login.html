@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+<h1>HTML Forms</h1>
+
+<form action="index.html" method="post">
+
+    <!-- Textbox & Password -->
+    Textbox
+    <input type="text" name="txtText" size="5" /><br/>
+
+    Password
+    <input type="password" name="txtPassword" /><br/>
+
+    <!-- Hidden -->
+    Hidden
+    <input type="hidden" name="txtHidden" value="" /><br/>
+
+    <!-- Checkbox -->
+    Male
+    <input type="checkbox" name="chkCheck" value="ON" checked="checked" /><br/>
+
+    <!-- Radio buttons -->
+    Status <br/>
+    <input type="radio" name="rdoStatus" value="Single"  checked="checked" />Single<br/>
+    <input type="radio" name="rdoStatus" value="Married" />Married<br/>
+    <input type="radio" name="rdoStatus" value="Divorsed" />Divorsed<br/>
+
+    <!-- Combobox (select 1) -->
+    ComboBox
+    <select name="txtCombo">
+        <option value="Servlet">JSP and Servlet</option>
+        <option value="EJB">EJB</option>
+    </select><br/>
+
+    <!-- Combobox nhiều lựa chọn -->
+    Multiple
+    <select name="txtList" multiple="multiple" size="3">
+        <option value="Servlet" selected>JSP and Servlet</option>
+        <option value="EJB"      selected>EJB</option>
+        <option value="Java">Core Java</option>
+    </select><br/>
+
+    <!-- Textarea -->
+    TextArea
+    <textarea name="txtArea" rows="4" cols="20">
+This is a form parameters demo!!!!
+    </textarea><br/>
+
+    <!-- Các nút -->
+    <input type="submit" value="Submit"   name="txtB"   />
+    <input type="submit" value="Register" name="action" />
+    <input type="reset"  value="Reset"    name="txtB"   />
+    <input type="button" value="JavaScript" name="txtB" onclick="" />
+
+</form>
+
+</body>
+</html>
